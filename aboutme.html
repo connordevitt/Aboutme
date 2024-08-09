@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Software Engineer</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .card:hover {
+        cursor: pointer;
+        background-color: #f8f9fa;
+      }
+      .navbar-nav a {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .profile-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      a.card-link {
+        text-decoration: none;
+        color: inherit;
+      }
+      .row .col-md-4 {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header and Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#future-plans">Future Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <div class="container py-5" id="about">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="/images/ME.jpg"
+            alt="Me at the Freedom Tower"
+            class="profile-img"
+          />
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h1 class="display-4">About Me</h1>
+          <p class="lead mt-3">
+            Thanks for stopping by. Read below to learn a little more about
+            myself.
+          </p>
+          <p class="mt-3">
+            I am a passionate Software Engineer inspired by technology with a
+            deep passion for innovation. I'm on a journey to master system
+            administration and carve out a career in cybersecurity, with a
+            special interest in Blue and Red Team strategies. Tackling complex
+            challenges is my thing, and I'm always on the lookout for new ways
+            to level up my skills and expertise.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered Project Card -->
+    <div class="container py-5" id="project">
+      <h2 class="mb-4 text-center">My Project</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="/images/connors-webpage.png"
+              class="card-img-top"
+              alt="Project Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">To-Do List Application</h5>
+              <p class="card-text">
+                A simple and intuitive to-do list application to help users
+                manage their tasks efficiently.
+              </p>
+              <a
+                href="https://connors-webpage.com/"
+                target="_blank"
+                class="btn btn-primary btn-sm"
+                >Visit Project</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Plans and Blog Topics -->
+    <div class="container py-5" id="future-plans">
+      <h2 class="mb-4">Future Plans</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <a href="Blog1.html" class="card-link">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Topic 1: Cybersecurity Trends</h5>
+                <p class="card-text">
+                  Latest Cybersecurity trends and insights.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="blog2.html" class="card-link">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Topic 2: System Administration Best Practices
+                    </h5>
+              <p class="card-text">
+                A look into my System administrator best practices and plans.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a href="Blog3.html" class="card-link">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        Topic 3: Learning Journey in Cybersecurity
+                    </h5>
+              <p class="card-text">
+                My current journey through cybersecurity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 border-top">
+      <div class="container">
+        <div class="mb-3">
+          <a href="https://x.com/Connordevitt_2" class="mx-2">Twitter</a>
+          <a href="https://github.com/connordevitt" class="mx-2">GitHub</a>
+          <a href="https://www.linkedin.com/in/connor-devitt-5a60b4234/" class="mx-2"
+            >LinkedIn</a
+          >
+        </div>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
