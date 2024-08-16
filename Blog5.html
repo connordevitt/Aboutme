@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Critical Security Vulnerabilities in SolarWinds and Palo Alto Networks -
+      My Blog
+    </title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        text-align: center;
+        padding: 50px 0;
+      }
+      .header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+      }
+      .header p {
+        font-size: 1.2em;
+        color: #666;
+      }
+      .blog-content {
+        margin-top: 40px;
+      }
+      .blog-content h2 {
+        margin-top: 20px;
+        font-size: 2em;
+        color: #333;
+      }
+      .blog-content img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      .blog-content p {
+        margin-bottom: 20px;
+        font-size: 1.1em;
+        color: #444;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1>
+          Critical Security Vulnerabilities in SolarWinds and Palo Alto Networks
+        </h1>
+        <p>
+          Addressing the latest security patches and vulnerabilities affecting
+          major software platforms
+        </p>
+        <p><strong>By Connor Devitt</strong></p>
+      </header>
+
+      <!-- Blog Content -->
+      <div class="blog-content">
+        <h2>Introduction</h2>
+        <p>
+          Recent security disclosures have highlighted critical vulnerabilities
+          in both SolarWinds Web Help Desk and Palo Alto Networks' Cortex XSOAR.
+          These flaws could potentially allow attackers to execute arbitrary
+          code, posing significant risks to affected systems. It is crucial for
+          users to understand these vulnerabilities and apply the necessary
+          patches to safeguard their systems.
+        </p>
+
+        <h2>SolarWinds Web Help Desk Vulnerability (CVE-2024-28986)</h2>
+        <p>
+          SolarWinds has released patches to address a critical security
+          vulnerability in its Web Help Desk software, identified as
+          CVE-2024-28986. This vulnerability, with a CVSS score of 9.8, is a
+          deserialization bug that could be exploited to execute arbitrary code
+          on vulnerable instances.
+        </p>
+        <p>
+          According to SolarWinds, "SolarWinds Web Help Desk was found to be
+          susceptible to a Java deserialization remote code execution
+          vulnerability that, if exploited, would allow an attacker to run
+          commands on the host machine." Although reported as an unauthenticated
+          vulnerability, SolarWinds has been unable to reproduce it without
+          authentication after thorough testing.
+        </p>
+        <p>
+          The flaw impacts all versions of SolarWinds Web Help Desk including
+          and prior to 12.8.3, and it has been addressed in hotfix version
+          12.8.3 HF 1. This vulnerability has also been added to the U.S.
+          Cybersecurity and Infrastructure Security Agency (CISA)'s Known
+          Exploited Vulnerabilities (KEV) catalog, indicating active
+          exploitation. Federal agencies are required to apply the fixes by
+          September 5, 2024.
+        </p>
+
+        <h2>Palo Alto Networks Cortex XSOAR Vulnerability (CVE-2024-5914)</h2>
+        <p>
+          In addition to the SolarWinds vulnerability, Palo Alto Networks has
+          patched a high-severity vulnerability affecting Cortex XSOAR, tracked
+          as CVE-2024-5914 with a CVSS score of 7.0. This command injection
+          issue could allow an unauthenticated attacker to execute arbitrary
+          commands within the context of an integration container.
+        </p>
+        <p>
+          The flaw affects all versions of Cortex XSOAR CommonScripts before
+          1.12.33. According to Palo Alto Networks, "To be exposed, an
+          integration must make use of the ScheduleGenericPolling or
+          GenericPollingScheduledTask scripts from the CommonScripts pack."
+        </p>
+
+        <h2>Additional Vulnerabilities in Palo Alto Networks</h2>
+        <p>Palo Alto Networks also addressed two moderate-severity issues:</p>
+        <ul>
+          <li>
+            <strong>CVE-2024-5915 (CVSS score: 5.2)</strong> - A privilege
+            escalation vulnerability in the GlobalProtect app on Windows devices
+            that allows a local user to execute programs with elevated
+            privileges.
+          </li>
+          <li>
+            <strong>CVE-2024-5916 (CVSS score: 6.0)</strong> - An information
+            exposure vulnerability in PAN-OS software that enables a local
+            system administrator to access secrets, passwords, and tokens of
+            external systems.
+          </li>
+        </ul>
+        <p>
+          Users are strongly recommended to update to the latest versions to
+          mitigate potential risks. It is also advised to revoke the secrets,
+          passwords, and tokens configured in PAN-OS firewalls after the upgrade
+          as a precautionary measure.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+          The recent disclosures of critical vulnerabilities in SolarWinds Web
+          Help Desk and Palo Alto Networks Cortex XSOAR underscore the
+          importance of timely patching and updating of software systems. By
+          staying vigilant and applying these updates, organizations can protect
+          themselves against potential exploits and maintain the security of
+          their IT infrastructure.
+        </p>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>&copy; 2024 Connor Devitt. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
