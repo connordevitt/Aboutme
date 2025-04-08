@@ -3,11 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me - Software Engineer</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Connor Devitt - Software Engineer & Cybersecurity Specialist</title>
+    <meta name="title" content="Connor Devitt - Software Engineer & Cybersecurity Specialist">
+    <meta name="description" content="Connor Devitt is a passionate Software Engineer specializing in cybersecurity, system administration, and software development. Explore my projects and insights on cybersecurity trends.">
+    <meta name="keywords" content="Connor Devitt, Software Engineer, Cybersecurity, System Administration, Web Development, IT Security, Blue Team, Red Team">
+    <meta name="author" content="Connor Devitt">
+  
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://connordevitt.github.io/Aboutme/" />
+    
+    
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Connor Devitt",
+      "jobTitle": "Software Engineer",
+      "url": "https://connordevitt.github.io/Aboutme/",
+      "sameAs": [
+        "https://x.com/Connordevitt_2",
+        "https://github.com/connordevitt",
+        "https://www.linkedin.com/in/connor-devitt-5a60b4234/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Software Development & Cybersecurity"
+      },
+      "description": "Passionate Software Engineer specializing in cybersecurity and system administration, with expertise in Blue and Red Team strategies."
+    }
+    </script>
+    
+    
     <style>
       :root {
         --primary-color: #2d3436;
@@ -140,140 +177,144 @@
     </style>
   </head>
   <body>
-    <!-- Header and Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Connor Devitt</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#future-plans">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-          </ul>
+    
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+          <a class="navbar-brand" href="#">Connor Devitt</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#future-plans">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <!-- About Me Section -->
-    <div class="container py-5 mt-5" id="about">
-      <div class="row align-items-center">
-        <div class="col-md-6" data-aos="fade-right">
-          <img src="images/ME.jpg" alt="Me in a nice setting" class="profile-img" />
+    <main>
+      
+      <section class="container py-5 mt-5" id="about" aria-label="About Me">
+        <div class="row align-items-center">
+          <div class="col-md-6" data-aos="fade-right">
+            <img src="images/ME.jpg" alt="Me in a nice setting" class="profile-img" />
+          </div>
+          <div class="col-md-6" data-aos="fade-left">
+            <h1 class="display-4 font-weight-bold mb-4">About Me</h1>
+            <p class="lead text-muted mb-4">
+              Thanks for stopping by. Let's get to know each other.
+            </p>
+            <p class="mb-4">
+              I am a passionate Software Engineer inspired by technology with a deep passion for innovation. 
+              I'm on a journey to master system administration and carve out a career in cybersecurity, 
+              with a special interest in Blue and Red Team strategies. Tackling complex challenges is my thing, 
+              and I'm always on the lookout for new ways to level up my skills and expertise.
+            </p>
+          </div>
         </div>
-        <div class="col-md-6" data-aos="fade-left">
-          <h1 class="display-4 font-weight-bold mb-4">About Me</h1>
-          <p class="lead text-muted mb-4">
-            Thanks for stopping by. Let's get to know each other.
-          </p>
-          <p class="mb-4">
-            I am a passionate Software Engineer inspired by technology with a deep passion for innovation. 
-            I'm on a journey to master system administration and carve out a career in cybersecurity, 
-            with a special interest in Blue and Red Team strategies. Tackling complex challenges is my thing, 
-            and I'm always on the lookout for new ways to level up my skills and expertise.
-          </p>
-        </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Project Section -->
-    <div class="container py-5" id="project">
-      <h2 class="section-title text-center" data-aos="fade-up">Featured Project</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6" data-aos="zoom-in">
-          <div class="card">
-            <img src="images/connors-webpage.png" class="card-img-top" alt="Project Image" />
-            <div class="card-body">
-              <h5 class="card-title">To-Do List Application</h5>
-              <p class="card-text text-muted">
-                A simple and intuitive to-do list application to help users manage their tasks efficiently.
-              </p>
-              <a href="https://connors-webpage.com/" target="_blank" class="btn btn-primary">
-                View Project
-              </a>
+      
+      <section class="container py-5" id="project" aria-label="Projects">
+        <h2 class="section-title text-center" data-aos="fade-up">Featured Project</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="card">
+              <img src="images/connors-webpage.png" class="card-img-top" alt="Project Image" />
+              <div class="card-body">
+                <h5 class="card-title">To-Do List Application</h5>
+                <p class="card-text text-muted">
+                  A simple and intuitive to-do list application to help users manage their tasks efficiently.
+                </p>
+                <a href="https://connors-webpage.com/" target="_blank" class="btn btn-primary">
+                  View Project
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Blog Section -->
-    <div class="container py-5" id="future-plans">
-      <h2 class="section-title" data-aos="fade-up">Latest Blog Posts</h2>
-      <div class="row">
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="Blog1.html" class="card-link">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Cybersecurity Trends</h5>
-                <p class="card-text text-muted">
-                  Latest Cybersecurity trends and insights.
-                </p>
+      
+      <section class="container py-5" id="future-plans" aria-label="Blog Posts">
+        <h2 class="section-title" data-aos="fade-up">Latest Blog Posts</h2>
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <a href="Blog1.html" class="card-link">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Cybersecurity Trends</h5>
+                  <p class="card-text text-muted">
+                    Latest Cybersecurity trends and insights.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-          <a href="blog2.html" class="card-link">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">System Administration Best Practices</h5>
-                <p class="card-text text-muted">
-                  A look into my System administrator best practices and plans.
-                </p>
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="blog2.html" class="card-link">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">System Administration Best Practices</h5>
+                  <p class="card-text text-muted">
+                    A look into my System administrator best practices and plans.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="Blog3.html" class="card-link">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Learning Journey in Cybersecurity</h5>
-                <p class="card-text text-muted">
-                  My current journey through cybersecurity.
-                </p>
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="Blog3.html" class="card-link">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Learning Journey in Cybersecurity</h5>
+                  <p class="card-text text-muted">
+                    My current journey through cybersecurity.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-          <a href="Blog4.html" class="card-link">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">System Administration & Cybersecurity</h5>
-                <p class="card-text text-muted">
-                  Exploring how system administration and cybersecurity come together.
-                </p>
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <a href="Blog4.html" class="card-link">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">System Administration & Cybersecurity</h5>
+                  <p class="card-text text-muted">
+                    Exploring how system administration and cybersecurity come together.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
-          <a href="Blog5.html" class="card-link">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Security Vulnerabilities Analysis</h5>
-                <p class="card-text text-muted">
-                  Addressing the latest security patches and vulnerabilities.
-                </p>
+            </a>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+            <a href="Blog5.html" class="card-link">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Security Vulnerabilities Analysis</h5>
+                  <p class="card-text text-muted">
+                    Addressing the latest security patches and vulnerabilities.
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
+    
+    <footer role="contentinfo">
       <div class="container">
         <div class="social-links mb-4">
           <a href="https://x.com/Connordevitt_2" target="_blank">Twitter</a>
@@ -284,7 +325,7 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
